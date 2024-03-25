@@ -1,0 +1,38 @@
+header{
+    padding-bottom: 15px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #012340;
+    padding: 10px;
+}
+.neon {
+    font-size: 30px;
+    color: #04D939;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+    0%, 100% {
+        text-shadow: 0 0 .2vw #04D939, 0 0 .6vw #04D939, 0 0 2vw #04D939, 0 0 2vw #04D939, 0 0 .1vw #04D939, .2vw .2vw .05vw #04D939;
+        color: #04D939;
+    }
+    50% {
+        text-shadow: 0 0 .25vw #007e1f, 0 0 .75vw #007e1f, 0 0 2.5vw #007e1f, 0 0 2.5vw #007e1f, 0 0 .1vw #007e1f, .2vw .2vw .05vw #04D939;
+        color: #04D939;
+    }
+}
+
+.perfil{
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 30px;
+    align-items: center;
+}
